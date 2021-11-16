@@ -1,0 +1,56 @@
+* {
+  background-color: rgb(11, 11, 11)
+}
+
+.nav-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 33px;
+}
+
+.fab {
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px 9px 0px 9px;
+}
+
+.nav-h1 {
+  display: flex;
+  justify-content: center;
+  margin: 11px 9px 0px 9px;
+  letter-spacing: 3.3px;
+}
+
+.fab:hover {
+  opacity: 0.7;
+  color: #a0ffff;
+}
+
+.fa-spotify {
+  color: white;
+}
+
+.fa-itunes-note {
+  color: white;
+}
+
+.fa-youtube {
+  color: white;
+}
+
+.fa-instagram {
+  color: white;
+}
+
+.fa-facebook {
+  color: white;
+}
+
+.fa-soundcloud {
+  color: white;
+}
+
+.fa-imdb {
+  color: white;
+}
