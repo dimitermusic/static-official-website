@@ -60,6 +60,18 @@ nav {
   color: white;
 }
 
+.columns {
+  margin: auto;
+}
+
+.column-one {
+  justify-content: end;
+}
+
+.column-two {
+  justify-content: start;
+}
+
 #album-cover {
   width: 500px;
   height: 500px;
@@ -86,8 +98,12 @@ nav {
   opacity: 0.9;
 }
 
+.release-text {
+  padding: 40px 40px 40px 100px
+}
+
 .concerts {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -95,11 +111,23 @@ nav {
     width: 400px;
     height: 400px;
   }
+  .column-one {
+    justify-content: center;
+  }
+  .column-two {
+    justify-content: center;
+  }
+  .release-text {
+    padding: 40px 40px 40px 60px
+  }
 }
 
 @media only screen and (max-width: 768px) {
   #album-cover {
     width: 250px;
     height: 250px;
+  }
+  .release-text {
+    padding: 0px
   }
 }
