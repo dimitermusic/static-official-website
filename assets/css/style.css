@@ -1,24 +1,28 @@
-* {
-  background-color: rgb(11, 11, 11)
+body {
+  background-color: black !important;
+}
+
+nav {
+  height: 150px;
 }
 
 .nav-icons {
   display: flex;
   justify-content: center;
-  margin-top: 33px;
+  margin: 33px 33px 33px 33px;
 }
 
 .fab {
   font-size: 25px;
   text-align: center;
   text-decoration: none;
-  margin: 0px 9px 0px 9px;
+  margin: 0px 16px 0px 16px;
 }
 
 .nav-h1 {
   display: flex;
   justify-content: center;
-  margin: 11px 9px 0px 9px;
+  margin: 33px;
   letter-spacing: 3.3px;
 }
 
@@ -53,4 +57,32 @@
 
 .fa-imdb {
   color: white;
+}
+
+#album-cover {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+}
+
+.release-text {
+  padding: 11px;
+}
+
+.release-btn {
+  background-color: #3fa0c4 !important;
+}
+
+@media only screen and (max-width: 1000px) {
+  #album-cover {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #album-cover {
+    width: 250px;
+    height: 250px;
+  }
 }
