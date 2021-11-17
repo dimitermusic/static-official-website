@@ -7,19 +7,18 @@ Official news, music, video and show updates from Dimiter Yordanov.
 - [Bebop Music]
   - [Description](#description)
   - [Table of Contents](#table-of-contents)
-  - [Installation](#installation)
   - [Usage](#usage)
   - [Contributing](#contributing)
   - [License](#license)
+  - [Links](#links)
   - [Questions](#questions)
 
-## Installation
-Just visit [dimitermusic.com](https://www.dimitermusic.com)
-
 ## Usage
+Visit [dimitermusic.com](https://www.dimitermusic.com)
+
 ### Screenshots (Desktop and Mobile)
 ![Home](./assets/images/news.png)
-![Home Mobile](./assets/images/news-mobile.png
+![Home Mobile](./assets/images/news-mobile.png)
 ![Shows](./assets/images/shows.png)
 ![Shows Mobile](./assets/images/shows-mobile.png)
 
