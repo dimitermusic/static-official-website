@@ -4,7 +4,7 @@
 Official news, music, video and show updates from Dimiter Yordanov.
 
 ## Table of Contents
-- [Bebop Music]
+- [Dimiter Yordanov | Official Site]
   - [Description](#description)
   - [Table of Contents](#table-of-contents)
   - [Usage](#usage)
