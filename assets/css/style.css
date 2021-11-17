@@ -11,7 +11,7 @@ nav {
 .nav-icons {
   display: flex;
   justify-content: center;
-  margin: 11px 33px 11px 33px;
+  margin: 33px;
 }
 
 .fab {
@@ -24,7 +24,7 @@ nav {
 .nav-h1 {
   display: flex;
   justify-content: center;
-  margin: 21px;
+  margin: 33px;
   letter-spacing: 3.3px;
 }
 
@@ -60,10 +60,6 @@ nav {
   color: white;
 }
 
-.columns {
-  margin: auto;
-}
-
 .column-one {
   justify-content: end;
 }
@@ -75,7 +71,6 @@ nav {
 #album-cover {
   width: 500px;
   height: 500px;
-  margin: auto;
 }
 
 #album-cover:hover {
@@ -99,11 +94,11 @@ nav {
 }
 
 .release-text {
-  padding: 40px 40px 40px 100px
+  padding: 80px 40px 40px 100px
 }
 
 .concerts {
-  margin-top: 80px;
+  margin-top: 147px;
 }
 
 @media only screen and (max-width: 1000px) {
