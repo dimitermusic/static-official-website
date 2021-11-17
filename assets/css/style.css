@@ -74,7 +74,11 @@ nav {
 }
 
 #album-cover:hover {
-  opacity: 0.9;
+  opacity: 0.96;
+}
+
+.album-card:hover {
+  background-color: #cbcbcb;
 }
 
 .release-btn {
