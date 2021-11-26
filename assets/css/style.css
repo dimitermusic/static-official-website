@@ -12,6 +12,7 @@ nav {
   display: flex;
   justify-content: center;
   margin: 33px;
+  padding-bottom: 11px;
 }
 
 .fab {
@@ -29,44 +30,24 @@ nav {
   letter-spacing: 3.3px;
 }
 
+.fab {
+  color: white;
+}
+
 .fab:hover {
   color: #3fa0c4;
 }
 
-.fa-spotify {
-  color: white;
-}
-
-.fa-itunes-note {
-  color: white;
-}
-
-.fa-youtube {
-  color: white;
-}
-
-.fa-instagram {
-  color: white;
-}
-
-.fa-facebook {
-  color: white;
-}
-
-.fa-soundcloud {
-  color: white;
-}
-
-.fa-imdb {
-  color: white;
+.container {
+  margin-top: 47px;
 }
 
 .column-one {
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .column-two {
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 #album-cover {
@@ -80,6 +61,15 @@ nav {
 
 .album-card:hover {
   background-color: #cbcbcb;
+}
+
+.release-text {
+  padding-bottom: 33px;
+  padding-left: 33px;
+}
+
+.rls-btns {
+  padding-left: 33px;
 }
 
 .release-btn {
@@ -98,10 +88,6 @@ nav {
   opacity: 0.9;
 }
 
-.release-text {
-  padding: 80px 40px 40px 100px
-}
-
 .concerts {
   margin-top: 147px;
 }
@@ -110,15 +96,25 @@ nav {
   #album-cover {
     width: 400px;
     height: 400px;
+    margin-top: 80px;
   }
+
   .column-one {
     justify-content: center;
+    align-items: flex-start;
   }
+
   .column-two {
     justify-content: center;
+    align-items: flex-start;
   }
+
   .release-text {
-    padding: 40px 40px 40px 60px
+    padding-left: 0px;
+  }
+
+  .rls-btns {
+    padding-left: 0px;
   }
 }
 
@@ -126,8 +122,10 @@ nav {
   #album-cover {
     width: 250px;
     height: 250px;
+    margin-top: 0px;
   }
-  .release-text {
-    padding: 0px
+
+  .container {
+    margin-top: 0;
   }
 }
