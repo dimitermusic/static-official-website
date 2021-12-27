@@ -15,11 +15,15 @@ nav {
   padding-bottom: 11px;
 }
 
-.fab {
-  font-size: 25px;
+#icon {
   text-align: center;
   text-decoration: none;
   margin: 0px 16px 0px 16px;
+  color: white;
+}
+
+#icon:hover {
+  color: #3fa0c4;
 }
 
 .nav-h1 {
@@ -28,14 +32,6 @@ nav {
   justify-content: center;
   margin: 33px;
   letter-spacing: 3.3px;
-}
-
-.fab {
-  color: white;
-}
-
-.fab:hover {
-  color: #3fa0c4;
 }
 
 .container {
@@ -53,10 +49,6 @@ nav {
 #album-cover {
   width: 500px;
   height: 500px;
-}
-
-.album-card:hover {
-  background-color: #cbcbcb;
 }
 
 .release-text {
