@@ -17,10 +17,18 @@ Official news, music, video and show updates from Dimiter Yordanov.
 Visit [dimitermusic.com](https://www.dimitermusic.com)
 
 ### Screenshots (Desktop and Mobile)
-![Home](./assets/images/news.png)
-![Home Mobile](./assets/images/news-mobile.png)
-![Shows](./assets/images/shows.png)
-![Shows Mobile](./assets/images/shows-mobile.png)
+![Desktop](./assets/images/ss1d.png)  
+
+![Desktop](./assets/images/ss2d.png)  
+
+![Desktop](./assets/images/ss3d.png)  
+
+![Mobile](./assets/images/ss1m.png)  
+
+![Mobile](./assets/images/ss2m.png)  
+
+![Mobile](./assets/images/ss3m.png)  
+
 
 ## Contributing
 To contribute, contact me below!
