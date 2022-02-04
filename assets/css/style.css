@@ -18,7 +18,7 @@ nav {
 .nav-icons {
   display: flex;
   justify-content: center;
-  margin: 33px;
+  margin: 1rem;
   padding-bottom: 11px;
 }
 
@@ -34,15 +34,13 @@ nav {
 }
 
 .nav-h1 {
-  display: flex;
   text-align: center;
-  justify-content: center;
-  margin: 33px;
   color: white;
+  font-size: calc(40px + (74 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .container {
-  margin-top: 47px;
+  margin-top: 33px;
 }
 
 .columns {
@@ -51,12 +49,14 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   color: white;
+  margin-top: 11px;
 }
 
 #album-cover {
-  width: 50%;
+  width: 70%;
+  position: relative;
   display: block;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 
 .release-text {
@@ -66,7 +66,6 @@ nav {
 .release-btn {
   background-color: #3fa0c4 !important;
   margin: auto;
-  padding: 11px;
   width: 200px;
   height: 50px;
   display: flex;
@@ -80,43 +79,5 @@ nav {
 }
 
 .concerts {
-  margin-top: 147px;
+  margin-top: 47px;
 }
-
-/* @media only screen and (max-width: 1000px) {
-  #album-cover {
-    width: 400px;
-    height: 400px;
-    margin-top: 80px;
-  }
-
-  .column-one {
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  .column-two {
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  .release-text {
-    padding-left: 0px;
-  }
-
-  .rls-btns {
-    padding-left: 0px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  #album-cover {
-    width: 250px;
-    height: 250px;
-    margin-top: 0px;
-  }
-
-  .container {
-    margin-top: 0;
-  }
-} */
