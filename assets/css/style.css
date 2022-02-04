@@ -1,8 +1,8 @@
 body {
-  background-image: url('../images/lie-to-me-blur-50.webp');
+  background-image: url('../images/lie-to-me-blur.webp');
   background-size: cover;
-  padding-top: 33px;
-  padding-bottom: 33px;
+  background-position: -20rem;
+  padding: 4.7rem 1rem;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -11,73 +11,78 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-nav {
-  height: 150px;
-}
-
 .nav-icons {
-  display: flex;
-  justify-content: center;
-  margin: 1rem;
-  padding-bottom: 11px;
-}
-
-#icon {
-  text-align: center;
-  text-decoration: none;
-  margin: 0px 16px 0px 16px;
-  color: white;
-}
-
-#icon:hover {
-  color: #3fa0c4;
-}
-
-.nav-h1 {
-  text-align: center;
-  color: white;
-  font-size: calc(40px + (74 - 14) * ((100vw - 300px) / (1600 - 300)));
-}
-
-.container {
-  margin-top: 33px;
-}
-
-.columns {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  color: white;
-  margin-top: 11px;
+  align-items: center;
 }
 
+#icon {
+  font-size: 1.36rem;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 1rem;
+  color: white;
+}
+
+#icon:hover {
+  color: #7ccbe8;
+}
+
+nav h1 {
+  text-align: center;
+  color: white;
+  font-size: calc(38px + (74 - 17) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.release-section {
+  margin-top: 5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+
 #album-cover {
-  width: 70%;
-  position: relative;
+  width: 50%;
   display: block;
-  margin: 40px auto;
+  margin: 0 auto;
+}
+
+.bold {
+  font-weight: bolder;
 }
 
 .release-text {
-  padding-bottom: 33px;
+  font-size: 2rem;
 }
 
 .release-btn {
-  background-color: #3fa0c4 !important;
-  margin: auto;
-  width: 200px;
-  height: 50px;
+  background-color: #3fa0c4;
+  margin: 1.47rem auto;
+  width: 14rem;
+  height: 3.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
 }
 
 .release-btn:hover {
-  filter: brightness(1.11);
+  background-color: #7ccbe8;
 }
 
-.concerts {
-  margin-top: 47px;
+.shows {
+  margin: 5rem 3rem;
+  text-align: center;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  #album-cover {
+    width: 85%;
+  }
 }
