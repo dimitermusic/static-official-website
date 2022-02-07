@@ -81,8 +81,64 @@ nav h1 {
   color: white;
 }
 
+#mc_embed_signup {
+  background: none;
+  clear: center;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+#mc-embedded-subscribe {
+  background-color: #3fa0c4;
+  color: inherit;
+  border: none;
+  padding: 1rem;
+  margin: 2rem 0 5rem 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+#mc-embedded-subscribe:hover {
+  background-color: white;
+  color: #3fa0c4;
+}
+
+#mce-EMAIL {
+  width: 33%;
+  height: 2rem;
+}
+
+.mc-field-group label {
+  margin: 1rem;
+}
+
+#small-txt {
+  margin-bottom: 2rem;
+  font-size: small;
+  color: rgb(222, 222, 222);
+}
+
 @media only screen and (max-width: 768px) {
+
   #album-cover {
     width: 85%;
   }
+
+  .mc-field-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #mce-EMAIL {
+    width: 80%;
+  }
+
+  #small-txt {
+    margin-bottom: .5rem;
+  }
+
 }
