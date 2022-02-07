@@ -101,8 +101,8 @@ nav h1 {
 }
 
 #mc-embedded-subscribe:hover {
-  background-color: white;
-  color: #3fa0c4;
+  background-color: white !important;
+  color: #3fa0c4 !important;
 }
 
 #mce-EMAIL {
@@ -127,11 +127,6 @@ nav h1 {
   font-size: small;
   margin: 0 !important;
   padding: .5rem 0 0 0 !important;
-}
-
-a:-webkit-any-link {
-  text-decoration: none !important;
-  color: #3fa0c4 !important;
 }
 
 #mc_embed_signup #mce-success-response {
