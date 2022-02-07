@@ -134,8 +134,18 @@ a:-webkit-any-link {
   color: #3fa0c4 !important;
 }
 
-.response {
-  margin-top: .5rem !important;
+#mc_embed_signup #mce-success-response {
+  color: #7ccbe8 !important;
+}
+
+#mc_embed_signup div.response {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-weight: bold;
+  float: left;
+  top: 0 !important;
+  z-index: 1;
+  width: 80%;
 }
 
 @media only screen and (max-width: 768px) {
