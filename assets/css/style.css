@@ -82,12 +82,12 @@ nav h1 {
 }
 
 #mc_embed_signup {
-  clear: center;
-  color: white;
-  text-align: center;
-  margin: 0 auto;
-  margin-bottom: 3rem;
-  width: 80%;
+  clear: center !important;
+  color: white !important;
+  text-align: center !important;
+  margin: 0 auto !important;
+  margin-bottom: 3rem !important;
+  width: 80% !important;
 }
 
 #mc-embedded-subscribe {
@@ -106,18 +106,18 @@ nav h1 {
 }
 
 #mce-EMAIL {
-  width: 33%;
-  height: 2rem;
+  width: 33% !important;
+  height: 2rem !important;
 }
 
 .mc-field-group label {
-  margin: 1rem;
+  margin: 1rem !important;
 }
 
 #small-txt {
-  margin-bottom: 2rem;
-  font-size: small;
-  color: rgb(222, 222, 222);
+  margin-bottom: 2rem !important;
+  font-size: small !important;
+  color: rgb(222, 222, 222) !important;
 }
 
 #mc_embed_signup div.mce_inline_error {
@@ -133,14 +133,15 @@ nav h1 {
   color: #89ffa4 !important;
   padding: 0 !important;
   margin: 0 auto !important;
-  text-align: center;
+  text-align: center !important;
 }
 
 #mc_embed_signup div.response {
   margin: 0 !important;
   padding: 0 !important;
-  font-weight: bold;
-  float: center;
+  font-weight: normal !important;
+  float: center !important;
+  text-align: center !important;
   top: 0 !important;
   z-index: 1;
   width: 80%;
