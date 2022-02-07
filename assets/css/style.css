@@ -82,11 +82,11 @@ nav h1 {
 }
 
 #mc_embed_signup {
-  background: none;
   clear: center;
   color: white;
   text-align: center;
   margin: 0 auto;
+  margin-bottom: 3rem;
   width: 80%;
 }
 
@@ -95,7 +95,7 @@ nav h1 {
   color: inherit;
   border: none;
   padding: 1rem;
-  margin: 2rem 0 5rem 0;
+  margin: 2rem;
   font: inherit;
   cursor: pointer;
   outline: inherit;
