@@ -123,7 +123,7 @@ nav h1 {
 
 #mc_embed_signup div.mce_inline_error {
   font-family: inherit !important;
-  background-color: none !important;
+  background: none !important;
   color: red !important;
   font-size: small;
   margin-top: 1rem;
