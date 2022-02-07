@@ -98,7 +98,7 @@ nav h1 {
   margin: 2rem;
   font: inherit;
   cursor: pointer;
-  outline: inherit;
+  outline: none;
 }
 
 #mc-embedded-subscribe:hover {
