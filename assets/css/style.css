@@ -90,15 +90,14 @@ nav h1 {
   width: 80%;
 }
 
-#mc-embedded-subscribe {
-  background-color: #3fa0c4;
-  color: inherit;
-  border: none;
-  padding: 1rem;
-  margin: 2rem;
-  font: inherit;
-  cursor: pointer;
-  outline: none;
+#mc-embed-signup .button {
+  background-color: #3fa0c4 !important;
+  color: inherit !important;
+  border: none !important;
+  padding: 1rem !important;
+  margin: 2rem !important;
+  font: inherit !important;
+  outline: none !important;
 }
 
 #mc-embedded-subscribe:hover {
