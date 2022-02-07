@@ -130,7 +130,10 @@ nav h1 {
 }
 
 #mc_embed_signup #mce-success-response {
-  color: #7ccbe8 !important;
+  color: #89ffa4 !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  text-align: center;
 }
 
 #mc_embed_signup div.response {
