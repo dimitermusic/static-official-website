@@ -121,6 +121,11 @@ nav h1 {
   color: rgb(222, 222, 222);
 }
 
+#mce-error-response {
+  background: none;
+  color: red;
+}
+
 @media only screen and (max-width: 768px) {
 
   #album-cover {
