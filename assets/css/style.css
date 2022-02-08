@@ -135,7 +135,18 @@ nav h1 {
 
 #mce-EMAIL {
   width: 33%;
+  height: 2.5rem;
+}
+
+::placeholder {
+  font-size: large;
+}
+
+#mce-EMAIL:active {
+  width: 33%;
   height: 2rem;
+  background: none;
+  border: none;
 }
 
 #small-txt {
