@@ -1,8 +1,7 @@
 body {
   background-image: url('../images/lie-to-me-blur.webp');
-  background-size: cover;
   background-position: -20rem;
-  padding: 4.7rem 1rem;
+  padding: 3.7rem 1rem;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -19,45 +18,62 @@ body {
   align-items: center;
 }
 
-#icon {
-  font-size: 1.36rem;
-  text-align: center;
-  text-decoration: none;
-  margin: 0 1rem;
-  color: white;
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-#icon:hover {
-  color: #7ccbe8;
+.icon {
+  font-size: calc(22px + (27 - 17) * ((100vw - 300px) / (1600 - 300)));
+  text-align: center;
+  text-decoration: none;
+  margin: 1rem;
+  color: #2E2A34;
+}
+
+.nav-icons a:hover .icon {
+  color: white;
+  transition: all .3s;
 }
 
 nav h1 {
+  margin: 1rem 0 0 0;
   text-align: center;
   color: white;
-  font-size: calc(38px + (74 - 17) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(48px + (47 - 17) * ((100vw - 300px) / (1600 - 300)));
 }
 
-.release-section {
+#release-section {
   margin-top: 5rem;
-  text-align: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  color: white;
 }
-
 
 #album-cover {
-  width: 50%;
+  width: 600px;
   display: block;
   margin: 0 auto;
+}
+
+.column {
+  padding: 0 3rem;
 }
 
 .bold {
   font-weight: bolder;
 }
 
-.release-text {
+#release-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
   font-size: 2rem;
 }
 
@@ -66,9 +82,11 @@ nav h1 {
   margin: 1.47rem auto;
   width: 14rem;
   height: 3.5rem;
+  border-radius: .7rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s;
 }
 
 .release-btn:hover {
@@ -76,29 +94,23 @@ nav h1 {
 }
 
 .shows {
-  margin: 5rem 3rem;
+  padding: 5rem 3rem;
   text-align: center;
   color: white;
+  margin: 0;
+}
+
+#copyright-text {
+  text-align: center;
+  color: #2E2A34;
+  font-size: small;
+  margin-top: 3rem;
 }
 
 @media only screen and (max-width: 768px) {
 
   #album-cover {
     width: 85%;
-  }
-
-  .mc-field-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #mce-EMAIL {
-    width: 80%;
-  }
-
-  #small-txt {
-    margin-bottom: .5rem;
   }
 
 }
