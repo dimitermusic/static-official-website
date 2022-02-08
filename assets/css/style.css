@@ -100,59 +100,53 @@ nav h1 {
   margin: 0;
 }
 
+#mc_embed_signup {
+  clear: center;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  width: 80%;
+}
+
+#mc-embedded-subscribe {
+  background-color: #3fa0c4;
+  color: inherit;
+  border: none;
+  padding: 1rem;
+  margin: 1rem;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+#mc-embedded-subscribe:hover {
+  background-color: white;
+  color: #3fa0c4;
+  transition: .3s;
+}
+
+#mce-EMAIL {
+  width: 33%;
+  height: 2.5rem;
+}
+
+::placeholder {
+  font-size: medium;
+}
+
+#mce-EMAIL:active {
+  width: 33%;
+  height: 2rem;
+  background: none;
+  border: none;
+}
+
 #copyright-text {
   text-align: center;
   color: #2E2A34;
   font-size: small;
   margin-top: 3rem;
-}
-
-#mc_embed_signup {
-  clear: center !important;
-  color: white !important;
-  text-align: center !important;
-  margin: 0 auto !important;
-  margin-bottom: 3rem !important;
-  width: 80% !important;
-}
-
-#mc-embedded-subscribe {
-  background-color: #3fa0c4 !important;
-  color: inherit !important;
-  border: none !important;
-  padding: 1rem !important;
-  margin: 1rem !important;
-  font: inherit !important;
-  cursor: pointer !important;
-  outline: none !important;
-}
-
-#mc-embedded-subscribe:hover {
-  background-color: white !important;
-  color: #3fa0c4 !important;
-  transition: .3s !important;
-}
-
-#mce-EMAIL {
-  width: 33% !important;
-  height: 2.5rem !important;
-}
-
-::placeholder {
-  font-size: large !important;
-}
-
-#mce-EMAIL:active {
-  width: 33% !important;
-  height: 2rem !important;
-  background: none !important;
-  border: none !important;
-}
-
-#small-txt {
-  margin-bottom: 2rem;
-  font-size: small;
-  color: rgb(222, 222, 222);
 }
 
 @media only screen and (max-width: 768px) {
@@ -169,10 +163,6 @@ nav h1 {
 
   #mce-EMAIL {
     width: 80%;
-  }
-
-  #small-txt {
-    margin-bottom: .5rem;
   }
 
 }
