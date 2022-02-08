@@ -162,7 +162,7 @@ nav h1 {
   }
 
   #mce-EMAIL {
-    width: 80%;
+    width: 80% !important;
   }
 
 }
