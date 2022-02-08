@@ -27,7 +27,7 @@ body {
 }
 
 .icon {
-  font-size: calc(22px + (27 - 17) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(22px + (24 - 17) * ((100vw - 300px) / (1600 - 300)));
   text-align: center;
   text-decoration: none;
   margin: 1rem;
@@ -65,7 +65,7 @@ nav h1 {
   padding: 0 3rem;
 }
 
-.bold {
+#bold {
   font-weight: bolder;
 }
 
