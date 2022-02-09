@@ -101,7 +101,7 @@ nav h1 {
   width: 80%;
 }
 
-#mc-embedded-subscribe {
+#subscribe-button input {
   background-color: #3fa0c4;
   color: inherit;
   border: none;
@@ -113,7 +113,7 @@ nav h1 {
   outline: none;
 }
 
-#mc-embedded-subscribe:hover {
+#subscribe-button input:hover {
   background-color: white;
   color: #3fa0c4;
   transition: .3s;
