@@ -32,14 +32,14 @@ body {
 }
 
 nav h1 {
-  margin: 1rem 0 0 0;
+  margin: 0;
   text-align: center;
   color: white;
-  font-size: calc(48px + (47 - 17) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(40px + (67 - 17) * ((100vw - 300px) / (1600 - 300)));
 }
 
 #release-section {
-  margin-top: 5rem;
+  margin-top: 7rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -86,7 +86,7 @@ nav h1 {
 }
 
 .shows {
-  padding: 5rem 3rem;
+  padding: 7rem 3rem;
   text-align: center;
   color: white;
   margin: 0;
@@ -97,7 +97,7 @@ nav h1 {
   color: white;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 3rem;
+  margin-bottom: 7rem;
   width: 80%;
 }
 
