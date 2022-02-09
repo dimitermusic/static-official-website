@@ -105,7 +105,7 @@ nav h1 {
   background-color: #3fa0c4;
   color: inherit;
   border: none;
-  border-radius: 0;
+  border-radius: 0 !important;
   padding: 1rem;
   margin: 1rem;
   font: inherit;
