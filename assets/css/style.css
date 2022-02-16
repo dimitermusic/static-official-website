@@ -32,7 +32,7 @@ body {
 
 .nav-icons a:hover .icon {
   color: white;
-  transition: all .3s;
+  transition: all .3s ease-out;
 }
 
 nav h1 {
@@ -83,16 +83,20 @@ nav h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s;
+  transition: all .3s ease-out;
 }
 
 .release-btn:hover {
   background-color: #fff;
 }
 
+.release-logo {
+  filter: brightness(100%);
+  transition: all .3s ease-out;
+}
+
 .release-btn:hover .release-logo {
-  filter: brightness(20%);
-  -webkit-transition: -webkit-filter 0.3s linear
+  filter: brightness(24%);
 }
 
 .shows {
@@ -127,7 +131,7 @@ nav h1 {
 #mc-embedded-subscribe:hover {
   background-color: white;
   color: #2E2A34;
-  transition: .3s;
+  transition: all .3s ease-out;
 }
 
 .required {
@@ -152,7 +156,7 @@ nav h1 {
 .required:-webkit-autofill:hover,
 .required:-webkit-autofill:focus,
 .required:-webkit-autofill:active {
-  transition: background-color 5000s ease-in-out 0s !important;
+  transition: background-color 5000s 0s !important;
 }
 
 .required:-webkit-autofill {
