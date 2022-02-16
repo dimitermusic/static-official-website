@@ -126,12 +126,12 @@ nav h1 {
   font: inherit;
   cursor: pointer;
   outline: none;
+  transition: all .3s ease-out;
 }
 
 #mc-embedded-subscribe:hover {
   background-color: white;
   color: #2E2A34;
-  transition: all .3s ease-out;
 }
 
 .required {
