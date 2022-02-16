@@ -3,15 +3,15 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
+  margin: 0;
+  padding: 3.7rem 1rem;
   background-image: url('../images/lie-to-me-blur.webp');
   background-position: -20rem;
-  padding: 3.7rem 1rem;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .nav-icons {
@@ -23,11 +23,11 @@ body {
 }
 
 .icon {
+  margin: 1rem;
+  color: #2E2A34;
   font-size: calc(22px + (24 - 17) * ((100vw - 300px) / (1600 - 300)));
   text-align: center;
   text-decoration: none;
-  margin: 1rem;
-  color: #2E2A34;
 }
 
 .nav-icons a:hover .icon {
@@ -37,25 +37,24 @@ body {
 
 nav h1 {
   margin: 0;
-  text-align: center;
   color: white;
   font-size: calc(40px + (67 - 17) * ((100vw - 300px) / (1600 - 300)));
-  letter-spacing: 0;
+  text-align: center;
 }
 
 #release-section {
-  margin-top: 7rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-top: 7rem;
 }
 
 #album-cover {
-  width: 600px;
   display: block;
   margin: 0 auto;
+  width: 600px;
 }
 
 .column {
@@ -75,14 +74,14 @@ nav h1 {
 }
 
 .release-btn {
-  background-color: #2E2A34;
-  margin: 1.47rem auto;
-  width: 14rem;
-  height: 3.5rem;
-  border-radius: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 1.47rem auto;
+  width: 14rem;
+  height: 3.5rem;
+  background-color: #2E2A34;
+  border-radius: 1rem;
   transition: all .3s ease-out;
 }
 
@@ -91,7 +90,6 @@ nav h1 {
 }
 
 .release-logo {
-  filter: brightness(100%);
   transition: all .3s ease-out;
 }
 
@@ -100,33 +98,33 @@ nav h1 {
 }
 
 .shows {
-  padding: 7rem 3rem;
-  text-align: center;
-  color: white;
   margin: 0;
+  padding: 7rem 3rem;
+  color: white;
+  text-align: center;
 }
 
 #mc_embed_signup {
-  clear: center;
-  color: white;
-  text-align: center;
   margin: 0 auto;
   margin-bottom: 7rem;
+  clear: center;
   width: 80%;
+  color: white;
+  text-align: center;
 }
 
 #mc-embedded-subscribe {
-  -webkit-appearance: none !important;
+  margin: 1rem;
+  padding: 1rem;
   background-color: #2E2A34;
   border: none;
   color: white;
-  letter-spacing: .1875rem;
-  padding: 1rem;
-  margin: 1rem;
   font: inherit;
+  letter-spacing: .1875rem;
   cursor: pointer;
   outline: none;
   transition: all .3s ease-out;
+  -webkit-appearance: none !important;
 }
 
 #mc-embedded-subscribe:hover {
@@ -135,10 +133,10 @@ nav h1 {
 }
 
 .required {
-  -webkit-appearance: none !important;
+  margin: 1rem !important;
+  padding: 0.5rem 0;
   width: 33% !important;
   height: 2.5rem !important;
-  margin: 1rem !important;
   background: none;
   border: none;
   border-radius: 0 !important;
@@ -148,8 +146,8 @@ nav h1 {
   text-transform: uppercase;
   letter-spacing: .1875rem;
   font-size: .875rem;
-  padding: 0.5rem 0;
   outline: 0 !important;
+  -webkit-appearance: none !important;
 }
 
 .required:-webkit-autofill,
