@@ -131,6 +131,7 @@ nav h1 {
 }
 
 .required {
+  -webkit-appearance: none !important;
   width: 33% !important;
   height: 2.5rem !important;
   margin: 1rem !important;
