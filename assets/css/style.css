@@ -150,15 +150,13 @@ nav h1 {
   -webkit-appearance: none !important;
 }
 
-.required:-webkit-autofill,
-.required:-webkit-autofill:hover,
-.required:-webkit-autofill:focus,
-.required:-webkit-autofill:active {
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
   transition: background-color 5000s 0s !important;
-}
-
-.required:-webkit-autofill {
   -webkit-text-fill-color: white !important;
+  -webkit-appearance: none !important;
 }
 
 .required:active, .required:focus {
