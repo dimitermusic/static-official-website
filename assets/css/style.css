@@ -1,11 +1,16 @@
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  letter-spacing: .1875rem;
+}
+
 body {
   background-image: url('../images/lie-to-me-blur.webp');
   background-position: -20rem;
   padding: 3.7rem 1rem;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -28,7 +33,7 @@ body {
 
 .nav-icons a:hover .icon {
   color: white;
-  transition: all .3s;
+  transition: all .5s;
 }
 
 nav h1 {
@@ -36,6 +41,7 @@ nav h1 {
   text-align: center;
   color: white;
   font-size: calc(40px + (67 - 17) * ((100vw - 300px) / (1600 - 300)));
+  letter-spacing: 0;
 }
 
 #release-section {
@@ -70,7 +76,7 @@ nav h1 {
 }
 
 .release-btn {
-  background-color: #3fa0c4;
+  background-color: #2E2A34;
   margin: 1.47rem auto;
   width: 14rem;
   height: 3.5rem;
@@ -78,11 +84,15 @@ nav h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 
 .release-btn:hover {
-  background-color: #7ccbe8;
+  background-color: #fff;
+}
+
+.release-btn:hover .release-logo {
+  filter: brightness(0%);
 }
 
 .shows {
@@ -102,11 +112,10 @@ nav h1 {
 }
 
 #mc-embedded-subscribe {
-  -webkit-appearance: none;
-  background-color: #3fa0c4;
-  color: inherit;
+  -webkit-appearance: none !important;
+  background-color: #2E2A34;
   border: none;
-  border-radius: 0;
+  color: white;
   padding: 1rem;
   margin: 1rem;
   font: inherit;
@@ -116,20 +125,48 @@ nav h1 {
 
 #mc-embedded-subscribe:hover {
   background-color: white;
-  color: #3fa0c4;
-  transition: .3s;
+  color: #2E2A34;
+  transition: .5s;
 }
 
-#mce-EMAIL {
-  width: 33%;
-  height: 2.5rem;
+.required {
+  width: 33% !important;
+  height: 2.5rem !important;
+  margin: 1rem !important;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #2E2A34;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: .875rem;
+  padding: 0.5rem 0;
+  outline: 0 !important;
+}
+
+.required:-webkit-autofill,
+.required:-webkit-autofill:hover,
+.required:-webkit-autofill:focus,
+.required:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s !important;
+}
+
+.required:-webkit-autofill {
+  -webkit-text-fill-color: white !important;
+}
+
+.required:active, .required:focus {
+  background: none !important;
+  border-bottom: 1px solid #2E2A34 !important;
 }
 
 ::placeholder {
-  font-size: medium;
+  font-size: inherit;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
-#mce-EMAIL:active {
+.required:active {
   width: 33%;
   height: 2rem;
   background: none;
@@ -155,7 +192,7 @@ nav h1 {
     align-items: center;
   }
 
-  #mce-EMAIL {
+  .required {
     width: 80% !important;
   }
 
