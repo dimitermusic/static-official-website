@@ -178,6 +178,21 @@ nav h1 {
   border: none;
 }
 
+.response {
+  padding: 1rem;
+  font-size: small;
+}
+
+.response a {
+  color: rgba(124, 203, 232, 1);
+}
+
+.mc-inline-error {
+  background: none !important;
+  color: #6B0505 !important;
+  font-weight: normal !important;
+}
+
 #copyright-text {
   text-align: center;
   color: #2E2A34;
