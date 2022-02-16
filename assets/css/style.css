@@ -137,6 +137,7 @@ nav h1 {
   margin: 1rem !important;
   background: none;
   border: none;
+  border-radius: 0 !important;
   border-bottom: 1px solid #2E2A34;
   color: #fff;
   text-align: center;
