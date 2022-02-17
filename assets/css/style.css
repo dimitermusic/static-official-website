@@ -155,13 +155,22 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   transition: background-color 5000s 0s !important;
+  -webkit-text-fill-color: #fff !important;
+}
+
+input:-webkit-autofill {
   -webkit-text-fill-color: white !important;
+}
+
+input {
   -webkit-appearance: none !important;
 }
 
 .required:active, .required:focus {
   background: none !important;
   border-bottom: 1px solid #2E2A34 !important;
+  color: #fff !important;
+  -webkit-appearance: none !important;
 }
 
 ::placeholder {
