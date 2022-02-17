@@ -137,7 +137,7 @@ nav h1 {
   padding: 0.5rem 0;
   width: 33% !important;
   height: 2.5rem !important;
-  background: none;
+  background-color: none;
   border: none;
   border-radius: 0 !important;
   border-bottom: 1px solid #2E2A34;
@@ -150,20 +150,15 @@ nav h1 {
   -webkit-appearance: none !important;
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
+.required:-webkit-autofill,
+.required:-webkit-autofill:hover,
+.required:-webkit-autofill:focus,
+.required:-webkit-autofill:active {
   transition: background-color 5000s 0s !important;
-  -webkit-text-fill-color: #fff !important;
 }
 
-input:-webkit-autofill {
+.required:-webkit-autofill {
   -webkit-text-fill-color: white !important;
-}
-
-input {
-  -webkit-appearance: none !important;
 }
 
 .required:active, .required:focus {
