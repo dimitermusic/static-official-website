@@ -137,7 +137,7 @@ nav h1 {
   padding: 0.5rem 0;
   width: 33% !important;
   height: 2.5rem !important;
-  background-color: none;
+  background: none;
   border: none;
   border-radius: 0 !important;
   border-bottom: 1px solid #2E2A34;
@@ -154,7 +154,7 @@ nav h1 {
 .required:-webkit-autofill:hover,
 .required:-webkit-autofill:focus,
 .required:-webkit-autofill:active {
-  transition: background-color 5000s 0s !important;
+  transition: background 5000s 0s !important;
 }
 
 .required:-webkit-autofill {
