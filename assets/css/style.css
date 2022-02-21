@@ -7,6 +7,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   margin: 0;
   padding: 3.7rem 1rem;
@@ -114,22 +118,25 @@ nav h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
 }
 
-#concert-table a {
+.btn {
   margin: 1rem;
   padding: 1rem;
   background-color: #2E2A34;
   border: none;
   color: white;
-  text-decoration: none;
   font: inherit;
   letter-spacing: .1875rem;
   cursor: pointer;
   outline: none;
   transition: all .3s ease-out;
   -webkit-appearance: none !important;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #2E2A34;
 }
 
 #concert-table p {
@@ -140,11 +147,7 @@ nav h1 {
   text-align: left;
   text-transform: uppercase;
   letter-spacing: .1875rem;
-}
-
-#concert-table a:hover {
-  background-color: #fff;
-  color: #2E2A34;
+  color: white;
 }
 
 .table-row {
