@@ -11,9 +11,8 @@
     <title>Dimiter Yordanov | Official Website</title>
     <link rel="shortcut icon" type="image/jpg" href="./assets/images/favicon.ico" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css"> -->
     <script src="https://kit.fontawesome.com/b2f7b346a3.js" crossorigin="anonymous"></script>
-    <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script>
+    <script type="text/javascript" src="./assets/scripts/concerts.js"></script>
     <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
     <script
         type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
@@ -84,13 +83,12 @@
                 </div>
             </div>
         </div>
-        <!-- Bandsintown Shows -->
+
+        <!-- Dynamically created concert dates from custom API -->
         <div class="shows">
             <h1>SHOWS</h1>
-            <a class="bit-widget-initializer" data-artist-name="id_4108441" data-font="inherit" data-language="en"
-                data-display-details="false" data-text-color="rgba(255,255,255,1)" data-separator-color="#DDDDDD"
-                data-popup-background-color="#ffffff" data-link-color="rgba(124,203,232,1)"
-                data-link-text-color="#FFFFFF" data-display-past-dates="true"></a>
+            <div id="concert-table">
+            </div>
         </div>
 
         <!-- Begin Mailchimp Signup Form -->
