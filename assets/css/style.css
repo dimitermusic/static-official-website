@@ -1,8 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: AkzidenzGroteskBQ-Ext, Helvatica, Arial;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -42,6 +40,9 @@ body {
 nav h1 {
   margin: 0;
   color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif !important;
   font-size: calc(40px + (67 - 17) * ((100vw - 300px) / (1600 - 300)));
   text-align: center;
 }
@@ -177,25 +178,6 @@ nav h1 {
   width: 80%;
   color: white;
   text-align: center;
-}
-
-#mc-embedded-subscribe {
-  margin: 1rem;
-  padding: 1rem;
-  background-color: #2E2A34;
-  border: none;
-  color: white;
-  font: inherit;
-  letter-spacing: .1875rem;
-  cursor: pointer;
-  outline: none;
-  transition: all .3s ease-out;
-  -webkit-appearance: none !important;
-}
-
-#mc-embedded-subscribe:hover {
-  background-color: white;
-  color: #2E2A34;
 }
 
 .required {
