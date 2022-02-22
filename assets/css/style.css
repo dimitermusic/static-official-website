@@ -16,7 +16,6 @@ body {
   padding: 3.7rem 1rem;
   background-image: url('../images/lie-to-me-blur.webp');
   background-position: -20rem;
-  font-family: Akzidenz-Grotesk BQ, sans-serif;
 }
 
 .nav-icons {
@@ -127,6 +126,7 @@ nav h1 {
   border: none;
   color: white;
   font: inherit;
+  font-size: small;
   letter-spacing: .1875rem;
   cursor: pointer;
   outline: none;
