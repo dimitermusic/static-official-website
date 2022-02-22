@@ -11,9 +11,9 @@ fetch(API)
 
         if (data.length < 1) {
             let comingSoon = document.createElement('p');
-            comingSoon.textContent = 'COMING SOON';
+            comingSoon.textContent = 'COMING SOON!';
             tableBody.appendChild(comingSoon);
-            tableBody.style.textAlign = 'center'
+            comingSoon.style.textAlign = 'center'
         }
 
         for (let i = 0; i < data.length; i++) {
