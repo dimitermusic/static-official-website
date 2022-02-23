@@ -1,5 +1,4 @@
 const API = 'https://dimiter-concert-api.herokuapp.com/api/concerts';
-const today = new Date().valueOf();
 
 fetch(API)
     .then(res => res.json())
@@ -8,10 +7,12 @@ fetch(API)
         let tableBody = document.getElementById('concert-table');
 
         if (data.length < 1) {
+
             let comingSoon = document.createElement('p');
             comingSoon.textContent = 'COMING SOON!';
             tableBody.appendChild(comingSoon);
             comingSoon.style.textAlign = 'center'
+
         }
 
         for (let i = 0; i < data.length; i++) {
@@ -21,6 +22,7 @@ fetch(API)
             let venue = document.createElement('p')
             let city = document.createElement('p')
             let ticketBtn = document.createElement('a');
+            let today = new Date().valueOf();
             let currentConcert = new Date(data[i].date).valueOf();
 
             if (currentConcert >= today) {
@@ -49,7 +51,6 @@ fetch(API)
 
     })
     .catch(err => {
-        console.log('Error')
         console.log(err)
         return err
     })
