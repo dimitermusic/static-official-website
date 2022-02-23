@@ -15,6 +15,7 @@ fetch(API)
         }
 
         for (let i = 0; i < data.length; i++) {
+
             let tableRow = document.createElement('a');
             let date = document.createElement('p')
             let venue = document.createElement('p')
@@ -29,14 +30,12 @@ fetch(API)
 
                 tableRow.href = data[i].bandsInTownLink;
                 tableRow.target = '_blank'
-
                 ticketBtn.textContent = 'TICKETS';
                 ticketBtn.href = data[i].ticketLink;
                 ticketBtn.target = '_blank'
                 date.textContent = data[i].date;
                 venue.textContent = data[i].venue;
                 city.textContent = data[i].city;
-
 
                 tableRow.appendChild(date);
                 tableRow.appendChild(venue);
