@@ -142,7 +142,7 @@ nav h1 {
 
 #concert-table p {
   margin: 1rem;
-  width: 14rem;
+  width: 25%;
   font-family: inherit;
   font-size: small;
   text-align: left;
@@ -154,9 +154,9 @@ nav h1 {
 .table-row {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
+  width: 87%;
   border-bottom: 1px solid #dddddd;
   background-color: rgba(255, 255, 255, 0);
   transition: all .3s ease-out;
@@ -260,6 +260,7 @@ nav h1 {
 
   #concert-table p {
     text-align: center;
+    width: 100%;
   }
 
   .table-row {
