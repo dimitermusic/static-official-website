@@ -11,9 +11,15 @@ a {
 
 body {
   margin: 0;
-  padding: 3.7rem 1rem;
+  background-color: #2E2A34;
+  padding-bottom: 5rem;
+}
+
+#top {
   background-image: url('../images/lie-to-me-blur.webp');
-  background-position: -20rem;
+  background-position: top 0 right 50%;
+  padding-top: 4rem;
+  padding-bottom: 12rem;
 }
 
 .nav-icons {
@@ -32,8 +38,21 @@ body {
   text-decoration: none;
 }
 
+.bottom-icon {
+  margin: 1rem;
+  color: #fff;
+  font-size: calc(22px + (24 - 17) * ((100vw - 300px) / (1600 - 300)));
+  text-align: center;
+  text-decoration: none;
+}
+
 .nav-icons a:hover .icon {
-  color: white;
+  color: #fff;
+  transition: all .3s ease-out;
+}
+
+.nav-icons a:hover .bottom-icon {
+  color: #9f9f9f;
   transition: all .3s ease-out;
 }
 
@@ -103,7 +122,6 @@ nav h1 {
 }
 
 .shows {
-  margin: 0;
   padding: 7rem 3rem;
   color: white;
   text-align: center;
@@ -124,8 +142,8 @@ nav h1 {
 .btn {
   margin: 1rem;
   padding: 1rem;
-  background-color: #2E2A34;
-  border: none;
+  background: none;
+  border: solid 1px white;
   color: white;
   font: inherit;
   font-size: small;
@@ -248,7 +266,7 @@ nav h1 {
 
 #copyright-text {
   text-align: center;
-  color: #2E2A34;
+  color: #fff;
   font-size: x-small;
   margin-top: 3rem;
 }

@@ -78,7 +78,7 @@ const copyright = () => {
     let copyrightText = document.getElementById('copyright-text')
     let thisYear = new Date().toDateString().slice(11);
 
-    copyrightText.textContent = `© ${thisYear} Dimiter Yordanov. All Rights Reserved.`;
+    copyrightText.textContent = `© ${thisYear} Dimiter Yordanov. All Rights Reserved. Powered by Dimiter Yordanov.`;
 
 }
 
