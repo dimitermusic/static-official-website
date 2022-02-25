@@ -5,14 +5,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  text-decoration: none;
-}
-
 body {
   margin: 0;
   background-color: #2E2A34;
   padding-bottom: 5rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 #top {
@@ -269,6 +269,14 @@ nav h1 {
   color: #fff;
   font-size: x-small;
   margin-top: 3rem;
+}
+
+.github-link {
+  color: #fff;
+}
+
+.github-link:hover {
+  color: #dddddd;
 }
 
 @media only screen and (max-width: 768px) {
