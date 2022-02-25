@@ -212,27 +212,26 @@ nav h1 {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: .1875rem;
-  font-size: .875rem;
   outline: 0 !important;
   -webkit-appearance: none !important;
 }
 
-.required:-webkit-autofill,
-.required:-webkit-autofill:hover,
-.required:-webkit-autofill:focus,
-.required:-webkit-autofill:active {
-  transition: background 5000s 0s !important;
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background 1000000s 0s !important;
 }
 
-.required:-webkit-autofill {
+input:-webkit-autofill {
   -webkit-text-fill-color: white !important;
 }
 
-.required:active, .required:focus {
-  background: none !important;
-  border-bottom: 1px solid #fff !important;
-  color: #fff !important;
-  -webkit-appearance: none !important;
+input:-internal-autofill-selected {
+  appearance: menulist-button;
+  background-image: none !important;
+  background-color: -internal-light-dark(#2E2A34, #2E2A34) !important;
+  color: -internal-light-dark(white, white) !important;
 }
 
 ::placeholder {
