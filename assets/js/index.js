@@ -4,7 +4,7 @@ console.log('hello world');
 // Fetch from custom concerts API and print to page
 const concerts = () => {
 
-    const API = 'https://dimiter-concert-api.herokuapp.com/api/concerts';
+    const API = 'https://dimiter-concert-api.wl.r.appspot.com/api/concerts';
 
     fetch(API)
         .then(res => res.json())
