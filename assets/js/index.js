@@ -13,7 +13,7 @@ const concerts = () => {
             let tableBody = document.getElementById('concert-table');
 
             // Print conditional message if no concerts
-            if (data.length < 1) {
+            if (data.length < 1 || (!data)) {
 
                 let comingSoon = document.createElement('p');
                 comingSoon.textContent = 'COMING SOON!';
