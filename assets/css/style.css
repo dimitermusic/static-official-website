@@ -52,7 +52,7 @@ a {
 }
 
 .nav-icons a:hover .bottom-icon {
-  color: #9f9f9f;
+  color: #99cff7;
   transition: all .3s ease-out;
 }
 
@@ -273,10 +273,11 @@ nav h1 {
 
 .github-link {
   color: #fff;
+  transition: all .3s ease-out;
 }
 
 .github-link:hover {
-  color: #dddddd;
+  color: #99cff7;
 }
 
 @media only screen and (max-width: 768px) {
