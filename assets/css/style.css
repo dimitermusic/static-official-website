@@ -236,7 +236,7 @@ input:-internal-autofill-selected {
 }
 
 ::placeholder {
-  font-size: inherit;
+  font-size: small;
   text-transform: uppercase;
   letter-spacing: .1875rem;
   color: #dddddd;
@@ -260,9 +260,8 @@ input:-internal-autofill-selected {
 
 .mce_inline_error {
   background: none !important;
-  color: #ff6961 !important;
   font-weight: normal !important;
-  font-size: small;
+  font-size: x-small;
 }
 
 #copyright-text {
