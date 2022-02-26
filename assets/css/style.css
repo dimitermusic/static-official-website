@@ -144,6 +144,7 @@ nav h1 {
   padding: 1rem;
   background: none;
   border: solid 1px white;
+  border-radius: 0 !important;
   color: white;
   font: inherit;
   font-size: small;
