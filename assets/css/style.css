@@ -262,6 +262,7 @@ input:-internal-autofill-selected {
   background: none !important;
   color: #ff6961 !important;
   font-weight: normal !important;
+  font-size: small;
 }
 
 #copyright-text {
