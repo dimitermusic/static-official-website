@@ -29,6 +29,8 @@ Visit [dimitermusic.com](https://www.dimitermusic.com)
 
 ![Mobile](./assets/images/ss3m.png)  
 
+![Mobile](./assets/images/ss4m.png)  
+
 
 ## Contributing
 To contribute, contact me below!
