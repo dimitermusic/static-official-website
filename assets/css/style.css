@@ -18,7 +18,7 @@ a {
 #top {
   background-image: url('../images/lie-to-me-blur.webp');
   background-position: top 0 right 50%;
-  padding-top: 4rem;
+  padding-top: 3rem;
   padding-bottom: 12rem;
 }
 
@@ -122,7 +122,8 @@ nav h1 {
 }
 
 .shows {
-  padding: 7rem 3rem;
+  margin: 0 auto;
+  padding: 5rem 3rem;
   color: white;
   text-align: center;
 }
@@ -193,7 +194,7 @@ nav h1 {
 
 #mc_embed_signup {
   margin: 0 auto;
-  margin-bottom: 7rem;
+  padding: 5rem 3rem;
   clear: center;
   width: 80%;
   color: white;
@@ -203,7 +204,7 @@ nav h1 {
 .required {
   margin: 1rem !important;
   padding: 0.5rem 0;
-  width: 25% !important;
+  width: 20rem !important;
   height: 2.5rem !important;
   background: none;
   border: none;
@@ -297,15 +298,14 @@ input:-internal-autofill-selected {
     padding: 1rem;
   }
 
+  #mc_embed_signup {
+    padding: 5rem 1rem !important;
+  }
+
   .mc-field-group {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .required {
-    width: 80% !important;
-    font-size: small;
   }
 
 }
