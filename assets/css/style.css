@@ -144,11 +144,12 @@ nav h1 {
   margin: 1rem;
   padding: 1rem;
   background: none;
-  border: solid 1px white;
+  border: solid 2px white;
   border-radius: 0 !important;
   color: white;
   font: inherit;
   font-size: small;
+  font-weight: 900;
   letter-spacing: .1875rem;
   cursor: pointer;
   outline: none;
@@ -167,6 +168,7 @@ nav h1 {
   font-family: inherit;
   font-size: small;
   text-align: left;
+  font-weight: 900;
   text-transform: uppercase;
   letter-spacing: .1875rem;
   color: white;
@@ -209,7 +211,7 @@ nav h1 {
   background: none;
   border: none;
   border-radius: 0 !important;
-  border-bottom: 1px solid #fff !important;
+  border-bottom: 2px solid #fff !important;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
