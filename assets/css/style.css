@@ -7,7 +7,7 @@
 
 body {
   margin: 0;
-  background-color: #2E2A34;
+  background-image: linear-gradient(rgb(78, 72, 88), rgb(46, 42, 52));
   padding-bottom: 5rem;
 }
 
