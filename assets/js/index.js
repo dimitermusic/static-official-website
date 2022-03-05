@@ -4,7 +4,7 @@ console.log('hello world');
 // Fetch from custom concerts API and print to page
 const concerts = () => {
 
-    const API = 'https://concert-api-5i4uylvzdq-wl.a.run.app/api/concerts';
+    const API = 'https://api.dimitermusic.com/concerts';
 
     fetch(API)
         .then(res => res.json())
