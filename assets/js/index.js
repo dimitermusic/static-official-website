@@ -1,8 +1,23 @@
 // Confirm file is linked to html
 console.log('hello world');
+// Select element from DOM to add concerts to
+let tableBody = document.getElementById('concert-table');
+
+// Print conditional message if no concert data
+const handleNoConcertMessage = () => {
+
+    let comingSoon = document.createElement('p');
+    let disclaimer = document.getElementById('concert-disclaimer');
+
+    disclaimer.textContent = ""
+    comingSoon.textContent = 'COMING SOON!';
+    tableBody.appendChild(comingSoon);
+    comingSoon.style.textAlign = 'center'
+
+}
 
 // Fetch from custom concerts API and print to page
-const concerts = () => {
+const handleFetchConcerts = () => {
 
     const API = 'https://api.dimitermusic.com/concerts';
 
@@ -10,70 +25,80 @@ const concerts = () => {
         .then(res => res.json())
         .then(data => {
 
-            let tableBody = document.getElementById('concert-table');
-
-            // Print conditional message if no concerts
             if (data.length < 1 || (!data)) {
 
-                let comingSoon = document.createElement('p');
-                comingSoon.textContent = 'COMING SOON!';
-                tableBody.appendChild(comingSoon);
-                comingSoon.style.textAlign = 'center'
+                handleNoConcertMessage();
 
             }
 
+
             // Sort concerts by date
-            data.sort((a, b) => {
-                let da = new Date(a.date),
-                    db = new Date(b.date);
-                return da - db;
-            });
+            const handleSortConcerts = () => {
+
+                data.sort((a, b) => {
+
+                    let da = new Date(a.date),
+                        db = new Date(b.date);
+
+                    return da - db;
+
+                });
+
+            }
 
             // Dynamically create, style, and set content of html elements based on concert API data
-            for (let i = 0; i < data.length; i++) {
+            const handleDisplayConcerts = () => {
 
-                let tableRow = document.createElement('a');
-                let date = document.createElement('p')
-                let eventName = document.createElement('p')
-                let city = document.createElement('p')
-                let ticketBtn = document.createElement('a');
-                let today = new Date().valueOf();
-                let currentConcert = new Date(data[i].date).valueOf();
+                for (let i = 0; i < data.length; i++) {
 
-                if (currentConcert >= today) {
+                    let tableRow = document.createElement('a');
+                    let date = document.createElement('p')
+                    let eventName = document.createElement('p')
+                    let city = document.createElement('p')
+                    let ticketBtn = document.createElement('a');
+                    let today = new Date().valueOf();
+                    let currentConcert = new Date(data[i].date).valueOf();
 
-                    tableRow.classList.add('table-row')
-                    ticketBtn.classList.add('btn')
+                    if (currentConcert >= today) {
 
-                    tableRow.href = data[i].bandsInTownLink;
-                    tableRow.target = '_blank'
-                    ticketBtn.textContent = 'TICKETS';
-                    ticketBtn.href = data[i].ticketLink;
-                    ticketBtn.target = '_blank'
-                    date.textContent = data[i].date;
-                    eventName.textContent = data[i].eventName;
-                    city.textContent = data[i].city;
+                        tableRow.classList.add('table-row')
+                        ticketBtn.classList.add('btn')
 
-                    tableRow.appendChild(date);
-                    tableRow.appendChild(eventName);
-                    tableRow.appendChild(city);
-                    tableRow.appendChild(ticketBtn);
-                    tableBody.appendChild(tableRow);
+                        tableRow.href = data[i].bandsInTownLink;
+                        tableRow.target = '_blank'
+                        ticketBtn.textContent = 'TICKETS';
+                        ticketBtn.href = data[i].ticketLink;
+                        ticketBtn.target = '_blank'
+                        date.textContent = data[i].date;
+                        eventName.textContent = data[i].eventName;
+                        city.textContent = data[i].city;
+
+                        tableRow.appendChild(date);
+                        tableRow.appendChild(eventName);
+                        tableRow.appendChild(city);
+                        tableRow.appendChild(ticketBtn);
+                        tableBody.appendChild(tableRow);
+
+                    }
 
                 }
 
             }
 
+            handleSortConcerts();
+            handleDisplayConcerts();
+
         })
         .catch(err => {
             console.log(err)
+            handleNoConcertMessage();
             return err
         })
 
 }
 
 // Dynamically set copyright year to automatically update
-const copyright = () => {
+const handleCopyrightMessage = () => {
 
     let copyrightText = document.getElementById('copyright-text')
     let thisYear = new Date().toDateString().slice(11);
@@ -91,5 +116,5 @@ const copyright = () => {
 
 }
 
-concerts();
-copyright();
+handleFetchConcerts();
+handleCopyrightMessage();
