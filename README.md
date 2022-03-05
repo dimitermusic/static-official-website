@@ -1,7 +1,7 @@
 # Dimiter Yordanov | Official Site [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-Official news, music, video and show updates from Dimiter Yordanov.
+My official music website with socials, news, and dynamically rendered concerts, newsletter, and footer.
 
 ## Table of Contents
 - [Dimiter Yordanov | Official Site]
