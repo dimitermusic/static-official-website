@@ -60,13 +60,6 @@ const handleFetchConcerts = () => {
 
                     if (currentConcert >= today) {
 
-                        // Add Bandsintown link to table row if not null.
-                        if (data[i].bandsInTownLink) {
-
-                            tableRow.href = data[i].bandsInTownLink;
-
-                        }
-
                         // Add CSS class to dynamically created row.
                         tableRow.classList.add('table-row')
 
@@ -82,7 +75,7 @@ const handleFetchConcerts = () => {
                         tableRow.appendChild(city);
                         tableBody.appendChild(tableRow);
 
-                        // Add ticket link if present or message if not.
+                        // Add ticket link if present.
                         if (data[i].ticketLink) {
 
                             let ticketBtn = document.createElement('a');
@@ -91,6 +84,13 @@ const handleFetchConcerts = () => {
                             ticketBtn.href = data[i].ticketLink;
                             ticketBtn.target = '_blank'
                             tableRow.appendChild(ticketBtn);
+
+                        }
+
+                        // Add Bandsintown link to table row if not null.
+                        if (data[i].bandsInTownLink) {
+
+                            tableRow.href = data[i].bandsInTownLink;
 
                         }
 
