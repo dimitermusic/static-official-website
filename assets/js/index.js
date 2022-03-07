@@ -55,29 +55,44 @@ const handleFetchConcerts = () => {
                     let date = document.createElement('p')
                     let eventName = document.createElement('p')
                     let city = document.createElement('p')
-                    let ticketBtn = document.createElement('a');
                     let today = new Date().valueOf();
                     let currentConcert = new Date(data[i].date).valueOf();
 
                     if (currentConcert >= today) {
 
-                        tableRow.classList.add('table-row')
-                        ticketBtn.classList.add('btn')
+                        // Add Bandsintown link to table row if not null.
+                        if (data[i].bandsInTownLink) {
 
-                        tableRow.href = data[i].bandsInTownLink;
+                            tableRow.href = data[i].bandsInTownLink;
+
+                        }
+
+                        // Add CSS class to dynamically created row.
+                        tableRow.classList.add('table-row')
+
+                        // Set content of dynamically created elements based on API data.
                         tableRow.target = '_blank'
-                        ticketBtn.textContent = 'TICKETS';
-                        ticketBtn.href = data[i].ticketLink;
-                        ticketBtn.target = '_blank'
                         date.textContent = data[i].date;
                         eventName.textContent = data[i].eventName;
                         city.textContent = data[i].city;
 
+                        // Print elements to page.
                         tableRow.appendChild(date);
                         tableRow.appendChild(eventName);
                         tableRow.appendChild(city);
-                        tableRow.appendChild(ticketBtn);
                         tableBody.appendChild(tableRow);
+
+                    }
+
+                    // Only make ticket button if there is a ticket link.
+                    if (data[i].ticketLink) {
+
+                        let ticketBtn = document.createElement('a');
+                        ticketBtn.classList.add('btn')
+                        ticketBtn.textContent = 'TICKETS';
+                        ticketBtn.href = data[i].ticketLink;
+                        ticketBtn.target = '_blank'
+                        tableRow.appendChild(ticketBtn);
 
                     }
 
