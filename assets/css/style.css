@@ -278,12 +278,15 @@ input:-internal-autofill-selected {
 
 .github-link {
   color: #fff;
-  transition: all .3s ease-out;
+  transition: all .2s ease-in;
+  border-bottom: solid 1px rgba(221, 221, 221, 0);
 }
 
 .github-link:hover {
-  color: #99cff7;
+  color: #ddd;
+  border-bottom: solid 1px #ddd;
 }
+
 
 @media only screen and (max-width: 768px) {
 
