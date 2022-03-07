@@ -82,17 +82,17 @@ const handleFetchConcerts = () => {
                         tableRow.appendChild(city);
                         tableBody.appendChild(tableRow);
 
-                    }
+                        // Add ticket link if present or message if not.
+                        if (data[i].ticketLink) {
 
-                    // Only make ticket button if there is a ticket link.
-                    if (data[i].ticketLink) {
+                            let ticketBtn = document.createElement('a');
+                            ticketBtn.classList.add('btn')
+                            ticketBtn.textContent = 'TICKETS';
+                            ticketBtn.href = data[i].ticketLink;
+                            ticketBtn.target = '_blank'
+                            tableRow.appendChild(ticketBtn);
 
-                        let ticketBtn = document.createElement('a');
-                        ticketBtn.classList.add('btn')
-                        ticketBtn.textContent = 'TICKETS';
-                        ticketBtn.href = data[i].ticketLink;
-                        ticketBtn.target = '_blank'
-                        tableRow.appendChild(ticketBtn);
+                        }
 
                     }
 
