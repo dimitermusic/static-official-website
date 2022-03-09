@@ -14,23 +14,23 @@ My official music website with social links, news, and music with dynamically re
   - [Questions](#questions)
 
 ## Usage
-Visit [dimitermusic.com](https://www.dimitermusic.com)
 
-### Screenshots (Desktop and Mobile)
-![Desktop](./assets/images/ss1d.png)  
+Visit [dimitermusic.com](https://www.dimitermusic.com)!
 
-![Desktop](./assets/images/ss2d.png)  
+New Release:  
+![Desktop](./assets/images/ss1.png)  
 
-![Desktop](./assets/images/ss3d.png)  
+Upcoming Concerts:  
+![Desktop](./assets/images/ss2.png)  
 
-![Mobile](./assets/images/ss1m.png)  
+Newsletter Signup:  
+![Desktop](./assets/images/ss3.png)  
 
-![Mobile](./assets/images/ss2m.png)  
+Custom API from which shows are fetched and conditionally rendered:  
+![Desktop](./assets/images/ss1a.png)  
 
-![Mobile](./assets/images/ss3m.png)  
-
-![Mobile](./assets/images/ss4m.png)  
-
+JSON view of API:  
+![Desktop](./assets/images/ss2a.png)  
 
 ## Contributing
 To contribute, contact me below!
